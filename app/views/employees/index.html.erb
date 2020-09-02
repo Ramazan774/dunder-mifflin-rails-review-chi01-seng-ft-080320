@@ -1,0 +1,7 @@
+<h1> Employee Page </h1>
+
+<% @employees.each do |employee| %>
+    <p><%= link_to employee.first_name, employee_path(employee) %></p>
+<% end %>
+<br>
+<p><%= link_to "Create Employee", new_employee_path%></p>
